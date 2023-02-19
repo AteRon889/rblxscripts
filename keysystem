@@ -1,0 +1,47 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Player = game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "Rblx Scripts", ConfigFolder = "OrionTest", IntroEnabled = true, IntroText = "Rblx Scripts"})
+
+--Key
+_G.Key = "h7ds0"
+_G.KeyInput = "string"
+
+-- Tabs
+local Tab = Window:MakeTab({
+	Name = "Key System",
+	Icon = "rbxassetid://10871266127",
+	PremiumOnly = false
+})
+
+--Functions
+function MakeScriptHub()
+    loadstring(game:HttpGet(()))()
+    OrionLib:Destroy()
+end
+
+--Notifications
+OrionLib:MakeNotification({
+	Name = "Logged In!",
+	Content = "You are logged in as "..Player.name..".",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--Key System
+Tab:AddTextbox({
+	Name = "Insert Key",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		_G.KeyInput = Value
+      
+	end	  
+})
+Tab:AddButton({
+	Name = "Check Key",
+	Callback = function()
+        if _G.KeyInput== _G.Key then
+            MakeScriptHub
+        end
+    end    
+})
