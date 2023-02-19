@@ -12,8 +12,7 @@ local Tab = Window:MakeTab({
 })
 
 function MakeScriptHub()
-    loadstring(game:HttpGet(()))()
-    OrionLib:Destroy()
+	OrionLib:Destroy()
 end
 
 OrionLib:MakeNotification({
