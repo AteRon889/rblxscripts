@@ -2,24 +2,20 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Player = game.Players.LocalPlayer
 local Window = OrionLib:MakeWindow({Name = "Rblx Scripts", ConfigFolder = "OrionTest", IntroEnabled = true, IntroText = "Rblx Scripts"})
 
---Key
 _G.Key = "h7ds0"
 _G.KeyInput = "string"
 
--- Tabs
 local Tab = Window:MakeTab({
 	Name = "Key System",
 	Icon = "rbxassetid://10871266127",
 	PremiumOnly = false
 })
 
---Functions
 function MakeScriptHub()
     loadstring(game:HttpGet(()))()
     OrionLib:Destroy()
 end
 
---Notifications
 OrionLib:MakeNotification({
 	Name = "Logged In!",
 	Content = "You are logged in as "..Player.name..".",
@@ -27,7 +23,6 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
---Key System
 Tab:AddTextbox({
 	Name = "Insert Key",
 	Default = "",
