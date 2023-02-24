@@ -1,4 +1,3 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/NooVster/404/main/Source'))()
 --More info at lux#2214 [Discord]
 --Hope you enjoy having CB:RO skins! [Animated are little buggy]
 local LocalPlayer = game:GetService("Players").LocalPlayer
