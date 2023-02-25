@@ -620,3 +620,5 @@ _G.Settings = {
     ["Low Quality Parts"] = true -- Lower quality parts
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/j2R1VPtw")()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NooVster/CB/main/Source"))()
