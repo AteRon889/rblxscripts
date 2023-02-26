@@ -15,7 +15,7 @@ local Tab = Window:MakeTab({
 
 --Functions
 function MakeScriptHub()
-    loadstring(game:HttpGet(https://raw.githubusercontent.com/AteRon889/rblxscripts/scripts/exploit))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AteRon889/rblxscripts/scripts/exploit"))()
     OrionLib:Destroy()
 end
 
@@ -41,7 +41,7 @@ Tab:AddButton({
 	Name = "Check Key",
 	Callback = function()
         if _G.KeyInput== _G.Key then
-            MakeScriptHub
+            MakeScriptHub()
         end
     end    
 })
